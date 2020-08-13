@@ -6,6 +6,10 @@ body{
 
 .navbar-dark{
     background-color: black;
+    min-width:100vw;
+}
+.navbar{
+  min-width: 100vw;
 }
 .jumbotron{
     min-height: 100vh;
@@ -130,6 +134,13 @@ section {
   }
   img{
     border-radius: 40%;
+    -webkit-box-shadow: 7px 11px 10px 1px rgba(173,164,173,1);
+    -moz-box-shadow: 7px 11px 10px 1px rgba(173,164,173,1);
+    box-shadow: 7px 11px 10px 1px rgba(173,164,173,1);
+  }
+  .img-box{
+    border-bottom: 10px ridge;
+    padding: 10px;
   }
   #instagram{
     width: 45px;

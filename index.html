@@ -11,8 +11,34 @@
     <title>Intilligent Lights</title>
 </head>
 <body>
-    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+    
+    <header class="jumbotron">
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="Navbar">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#what">What</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#how">How</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#who">Who</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#whatelse">What Else</a></li>
+                            <script>
+                                $(".nav-item").on("click", function(e){
+                                // Remove class active form all li.nav-tiem
+                                $("li.nav-item").removeClass("active");
+                                // Add Class to current Element. 
+                                $(this).addClass("active");
+                                });
+                            </script>
+                        </ul>
+                    </div>       
+                </div>
+            </nav>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,7 +61,6 @@
             </div>       
         </div>
     </nav>
-    <header class="jumbotron">
         <div class="container">
             <video autoplay muted loop id="myVideo">
                 <source src="videos/main-nackground.mp4" type="video/mp4">
@@ -81,7 +106,7 @@
                 <p class="text-justify">Traffic congestion is one of the most vexing urban issues. Population growth together with a great demand of 
                     transportation indirectly contribute to the increasing number of vehicles on the road that will eventually 
                     cause traffic congestion. Many traditional and recent approaches tried to decrease traffic congestion by 
-                    rerouting vehicles, increasing width of roads, developing new architectures etc, but were are trying to 
+                    rerouting vehicles, increasing width of roads, developing new architectures etc, but we are trying to 
                     touch on different side of approach which focuses on time wasted in Today's traffic. </p>
             </div>
         </div>
@@ -119,14 +144,13 @@
     
     <section class="team">
         <div class="container text-center">
-            <h2 class="py-3">The Executive Team</h2>
             <p></p>
             <div class="row">
-                <div class="col-lg-4">
-                    <img src="images/manoj.jpg" class="img-fluid" alt="">
-                    <h5>Manoj Kumar V</h5>
-                    <small>Student</small>
-                    <p class="p2">Ramaiah University of Applied Sciences</p>
+                <div class="img-box col-lg-4" data-aos="fade-left">
+                    <img src="images/thanushree.jpg" class="img-fluid" alt="">
+                    <h5 data-aos="fade-right">Thanushree M</h5>
+                    <small data-aos="fade-right">Student - CSE</small>
+                    <p class="p2" data-aos="fade-right">Ramaiah University of Applied Sciences</p>
                     <div class="row justify-content-center"> 
                         <div id="instagram"><span><i class="fa fa-instagram"></i><a href="#"></a>
 
@@ -136,11 +160,11 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <img src="images/manoj.jpg" class="img-fluid" alt="">
-                    <h5>Manoj Kumar V</h5>
-                    <small>Student</small>
-                    <p class="p2">Ramaiah University of Applied Sciences</p>
+                <div class="img-box col-lg-4" data-aos="fade-right">
+                    <img src="images/manoj.jpg" class="img-fluid" data-aos="flip-down"alt="">
+                    <h5 data-aos="fade-right">Manoj Kumar V - CSE</h5>
+                    <small data-aos="fade-right">Student</small>
+                    <p class="p2" data-aos="fade-right">Ramaiah University of Applied Sciences</p>
                     <div class="row justify-content-center"> 
                         <div id="instagram"><span><a href="#"></a><i class="fa fa-instagram"></i></span></div>
                         <div id="email"><span><i class="fa fa-envelope mx-3"></i></span></div>
@@ -148,11 +172,11 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="img-box col-lg-4" data-aos="fade-left">
                     <img src="images/jeevith.jpg" class="img-fluid" alt="">
-                    <h5>Jeevith R</h5>
-                    <small>Student</small>
-                    <p class="p2">Ramaiah University of Applied Sciences</p>
+                    <h5 data-aos="fade-right">Jeevith R</h5>
+                    <small data-aos="fade-right">Student - CSE</small>
+                    <p class="p2" data-aos="fade-right">Ramaiah University of Applied Sciences</p>
                     <div class="row justify-content-center"> 
                         <div id="instagram"><span><i class="fa fa-instagram"></i></span></div>
                         <div id="email"><span><i class="fa fa-envelope mx-3"></i></span></div>
@@ -160,11 +184,11 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="img-box col-lg-4" data-aos="fade-right">
                     <img src="images/pradeep.jpg" class="img-fluid" alt="">
-                    <h5>Pradeep R</h5>
-                    <small>Student</small>
-                    <p class="p2">Ramaiah University of Applied Sciences</p>
+                    <h5 data-aos="fade-left">Pradeep R</h5>
+                    <small data-aos="fade-left">Student - CSE</small>
+                    <p class="p2" data-aos="fade-left">Ramaiah University of Applied Sciences</p>
                     <div class="row justify-content-center"> 
                         <div id="instagram"><span><i class="fa fa-instagram"></i></span></div>
                         <div id="email"><span><i class="fa fa-envelope mx-3"></i></span></div>
@@ -172,11 +196,11 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="img-box col-lg-4" data-aos="fade-left">
                     <img src="images/rahul.jpg" class="img-fluid" alt="">
-                    <h5>Rahul V</h5>
-                    <small>Student</small>
-                    <p class="p2">Ramaiah University of Applied Sciences</p>
+                    <h5 data-aos="fade-right">Rahul V</h5>
+                    <small data-aos="fade-right">Student - CSE</small>
+                    <p class="p2" data-aos="fade-right">Ramaiah University of Applied Sciences</p>
                     <div class="row justify-content-center"> 
                         <div id="instagram"><span><i class="fa fa-instagram"></i></span></div>
                         <div id="email"><span><i class="fa fa-envelope mx-3"></i></span></div>
@@ -184,10 +208,22 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="img-box col-lg-4" data-aos="fade-right">
                     <img src="images/yatish.jpg" class="img-fluid" alt="">
-                    <h5>Yatish Rasineni</h5>
-                    <small>Student</small>
+                    <h5 data-aos="fade-left">Yatish Rasineni</h5>
+                    <small data-aos="fade-left">Student - CSE</small>
+                    <p class="p2" data-aos="fade-left">Ramaiah University of Applied Sciences</p>
+                    <div class="row justify-content-center"> 
+                        <div id="instagram"><span><i class="fa fa-instagram"></i></span></div>
+                        <div id="email"><span><i class="fa fa-envelope mx-3"></i></span></div>
+                        <div id="linkedin"><span><i class="fa fa-linkedin"></i></span></div>
+
+                    </div>
+                </div>
+                <div class="img-box col-lg-4" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                    <img src="images/harikrishna.jpg" class="img-fluid" alt="">
+                    <h5>Hari Krishna S M</h5>
+                    <small>Assistant Professor - CSE</small>
                     <p class="p2">Ramaiah University of Applied Sciences</p>
                     <div class="row justify-content-center"> 
                         <div id="instagram"><span><i class="fa fa-instagram"></i></span></div>
