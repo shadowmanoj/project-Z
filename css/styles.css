@@ -120,5 +120,33 @@ section {
   .font-italic{
 
   }
+  small{
+    color: grey;
+    font-weight: bold;
+  }
   
-  
+  #instagram{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 20px;
+    padding-top: 7px;
+    display: inline block;
+  }
+  #email{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 20px;
+    padding-top: 7px;
+    display: inline block;
+    margin: 0px 10px;
+  }
+  #linkedin{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 20px;
+    padding-top: 7px;
+    display: inline block;
+  }
