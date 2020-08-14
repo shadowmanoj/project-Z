@@ -122,6 +122,8 @@ section {
     }
   }
   .font-italic{
+    text-align: center;
+    font-size: 20px;
 
   }
   small{
@@ -132,17 +134,25 @@ section {
     color: grey;
     font-weight: bold;
   }
-  img{
-    border-radius: 40%;
+  .img-fluid{
+    max-width:80%;
+
+  }
+  .img-box{
+    align-self: center;
+    max-width:85%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     -webkit-box-shadow: 7px 11px 10px 1px rgba(173,164,173,1);
     -moz-box-shadow: 7px 11px 10px 1px rgba(173,164,173,1);
     box-shadow: 7px 11px 10px 1px rgba(173,164,173,1);
-  }
-  .img-box{
-    border-bottom: 10px ridge;
-    padding: 10px;
+    border-radius: double;
   }
   #instagram{
+    color: black;
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -151,6 +161,7 @@ section {
     display: inline block;
   }
   #email{
+    color: black;
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -160,6 +171,7 @@ section {
     margin: 0px 10px;
   }
   #linkedin{
+    color: black;
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -172,3 +184,5 @@ section {
     font-style: italic;
     font-weight: bold;
   }
+
+  
