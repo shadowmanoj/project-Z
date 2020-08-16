@@ -123,7 +123,7 @@ section {
   }
   .font-italic{
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
 
   }
   small{
@@ -151,34 +151,14 @@ section {
     box-shadow: 7px 11px 10px 1px rgba(173,164,173,1);
     border-radius: double;
   }
-  #instagram{
-    color: black;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    font-size: 20px;
-    padding-top: 7px;
-    display: inline block;
+  .btn{
+    min-width: 40%;
+    min-height: 50%;
+    color:white;
+    
+    
   }
-  #email{
-    color: black;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    font-size: 20px;
-    padding-top: 7px;
-    display: inline block;
-    margin: 0px 10px;
-  }
-  #linkedin{
-    color: black;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    font-size: 20px;
-    padding-top: 7px;
-    display: inline block;
-  }
+  
   h5{
     font-size: 30px;
     font-style: italic;
