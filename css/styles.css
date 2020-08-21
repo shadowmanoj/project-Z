@@ -154,9 +154,7 @@ section {
   .btn{
     min-width: 40%;
     min-height: 50%;
-    color:white;
-    
-    
+    color:white; 
   }
   
   h5{
@@ -165,4 +163,8 @@ section {
     font-weight: bold;
   }
 
-  
+  .footer{
+    background-color: #D1C4E9;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+}
