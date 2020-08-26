@@ -1,0 +1,24 @@
+.roundedTopCorners{
+   border-top-left-radius: 50px;
+   border-top-right-radius: 50px;
+   border-collapse: true;
+  overflow:hidden;
+}
+
+.roundedBottomCorners{
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-collapse: true;
+    overflow:hidden;
+ }
+
+.darkCardHeader{
+	color:rgb(255,255,255);
+}
+
+.innerMessageCardRight{
+	padding:20px;
+	margin:10px;
+	border-radius:40px 40px 40px 0px;
+	background-color:rgba(0,0,0,.03);
+}

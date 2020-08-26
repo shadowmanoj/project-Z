@@ -4,6 +4,7 @@
   "description": "An project protofolio website",
   "main": "index.html",
   "scripts": {
+    "webpack": "webpack",
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server"
@@ -11,11 +12,31 @@
   "author": "Manoj Kumar V",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.11.4",
     "aos": "^2.3.4",
-    "bootstrap": "^4.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "bootstrap": "^4.5.2",
+    "css-loader": "^4.2.2",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.1",
     "lite-server": "^2.5.4",
-    "popper.js": "^1.12.9"
+    "popper.js": "^1.12.9",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "react-redux-form": "^1.16.14",
+    "reactstrap": "^8.5.1",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4"
   }
 }
