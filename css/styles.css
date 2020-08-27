@@ -150,6 +150,7 @@ section {
     -moz-box-shadow: 7px 11px 10px 1px rgba(173,164,173,1);
     box-shadow: 7px 11px 10px 1px rgba(173,164,173,1);
     border-radius: double;
+    z-index: auto;
   }
   .btn{
     min-width: 40%;
@@ -168,3 +169,4 @@ section {
     margin: 0px auto;
     padding: 20px 0px 20px 0px;
 }
+

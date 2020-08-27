@@ -22,6 +22,7 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "lite-server": "^2.5.4",
+    "mdbreact": "^4.27.0",
     "popper.js": "^1.12.9",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

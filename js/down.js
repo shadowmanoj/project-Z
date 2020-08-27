@@ -12,3 +12,9 @@ function parallax(){
 $(window).scroll(function(e){
     parallax();
 });
+
+function newpage(url){
+  window.location=url;
+  }
+
+
