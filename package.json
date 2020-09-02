@@ -25,6 +25,7 @@
     "mdbreact": "^4.27.0",
     "popper.js": "^1.12.9",
     "react": "^16.13.1",
+    "react-animation-components": "^3.0.0",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.1",
     "react-redux-form": "^1.16.14",

@@ -16,6 +16,25 @@
 	color:rgb(255,255,255);
 }
 
+.commentMessage{
+	margin-left:0;
+}
+.cardComment{
+	padding-top:10;
+	padding-bottom: 0;
+	padding-left:10;
+	padding-right:10;
+
+}
+.commentCaption{
+	margin-right:0;
+}
+.ex{
+	margin-top:0;
+}
+.nex{
+	margin-bottom:0;
+}
 .innerMessageCardRight{
 	padding:20px;
 	margin:10px;

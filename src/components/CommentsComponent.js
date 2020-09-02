@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 
-import { Control, Form, Errors} from 'react-redux-form';
+import { Control, Form, Errors } from 'react-redux-form';
 import { Loading } from './LoadingComponent';
-
+import { Stagger, Fade } from 'react-animation-components';
 import {
 	Card,
 	CardBody,
-	CardImg,
 	CardHeader,
 	Button,
 	Row,
@@ -14,7 +13,6 @@ import {
 	Collapse,
 	Carousel,
 	CarouselItem,
-	CardImgOverlay,
 	CarouselIndicators,
 	CarouselControl
 } from 'reactstrap';
@@ -30,12 +28,12 @@ class CommentComponent extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			isCommentFormOpen: false,
+			isCommentFormOpen: true,
 			animating: false,
 			activeIndex: 0,
 			toastShow: false
 		}
-		this.renderCommentsCarousel=this.renderCommentsCarousel.bind(this);
+		this.renderCommentsCarousel = this.renderCommentsCarousel.bind(this);
 		this.toggleComment = this.toggleComment.bind(this);
 		this.handleComment = this.handleComment.bind(this);
 		this.next = this.next.bind(this);
@@ -85,7 +83,7 @@ class CommentComponent extends Component {
 		//event.preventDefault();//by default control goes to next page
 	}
 
-	
+
 	renderCommentsCarousel({ comments }) {
 
 		const slides = comments.map((comment) => {
@@ -96,21 +94,13 @@ class CommentComponent extends Component {
 					key={comment.id}
 				>
 					<div>
-						<div>
-							
-							<CardImgOverlay><br /><br /><h3><strong>{comment.message.slice(0, 20) + "..."}</strong></h3>
-								<p> ~ {comment.author} {" ,  "}{new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(Date.parse(comment.date)))}</p>
-							</CardImgOverlay>
-
-						</div>
-						<br />
-						<br />
-						<Collapse isOpen={this.state.toastShow}>
-							<Card className="roundedBottomCorners"inverse color="dark">
+						<Collapse isOpen={!this.state.toastShow}>
+							<Card className="roundedBottomCorners roundedTopCorners" inverse color="dark">
 								<CardBody>
-									<p><strong>{comment.message}</strong></p>
-									<p> ~ {comment.author} {" ,  "}{new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(Date.parse(comment.date)))}</p>
-									<br/>
+
+									<h4><strong>{comment.message.slice(0, 20) + "..."}</strong></h4>
+									<p> ~ {comment.author} </p>
+
 								</CardBody>
 							</Card>
 						</Collapse>
@@ -118,9 +108,23 @@ class CommentComponent extends Component {
 				</CarouselItem>
 			);
 		});
+		const moreSlides = comments.map((comment) => {
+			return (
+				<li>
+					<div>
+						<Fade in>
+							<CardBody className="cardComment">
+								<p className="align text-left nex"><strong>{"\"" + comment.message + "\""}</strong></p>
+								<p className="align text-right ex"><i> ~ {comment.author} {" ,  "}{new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(Date.parse(comment.date)))}</i></p>
+							</CardBody>
+						</Fade>
+					</div>
+				</li>
+			);
+		})
 		const showMoreOrLess = (more) => {
-			if (more) return (<div>show less{" "}<span className="fa fa-angle-up fa-lg"></span></div>)
-			return (<div>show more{" "}<span className="fa fa-angle-down fa-lg"></span></div>);
+			if (more) return (<div>show less{"  "}<span className="fa fa-angle-up fa-lg"></span></div>)
+			return (<div>show more{" ("+(this.props.comments.length-1)+" comments)  "}<span className="fa fa-angle-down fa-lg"></span></div>);
 		};
 		return (
 			<div>
@@ -136,7 +140,18 @@ class CommentComponent extends Component {
 
 				</Carousel>
 				<a onClick={this.toggleToastShow}>{showMoreOrLess(this.state.toastShow)}</a>
+				<div>
+
+					<Collapse isOpen={this.state.toastShow}>
+						<ul className="list-unstyled">
+							<Stagger in>
+								{moreSlides}
+							</Stagger>
+						</ul>
+					</Collapse>
+				</div>
 			</div>
+
 		);
 
 	}
@@ -166,7 +181,7 @@ class CommentComponent extends Component {
 			const Commentsform = () => {
 				return (
 					<Card className="roundedTopCorners">
-						<CardHeader  className="darkCardHeader bg-dark" tag="h3">
+						<CardHeader className="darkCardHeader bg-dark" tag="h3">
 							<strong>Leave us a comment!</strong><textonbutton />
 						</CardHeader>
 						<CardBody>
@@ -215,15 +230,15 @@ class CommentComponent extends Component {
 			};
 
 			return (
-				<div className="container">
-					<br/>
-					<div className="row ">
-						<div className="col-12 col-md-8 col-lg-5 offset-md-2" styles={{ "margin-bottom": "0" }}>
+				<div className="container ">
+					<br />
+					<div className="row justify-content-center ">
+						<div className="col-12 col-md-8 col-lg-5 " styles={{ "margin-bottom": "0" }}>
 							{Commentsform()}
 						</div>
 					</div>
-					<div className="row">
-						<div className="col-12 col-md-8 col-lg-5 offset-md-2 " styles={{ "margin-top": "0" }} >
+					<div className="row justify-content-center">
+						<div className=" col-12 col-md-8 col-lg-5 " styles={{ "margin-top": "0" }} >
 							<Card className="roundedBottomCorners">
 								<CardBody>
 									<a
@@ -239,7 +254,7 @@ class CommentComponent extends Component {
 							</Card>
 						</div>
 					</div>
-					
+
 
 				</div>
 

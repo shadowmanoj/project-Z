@@ -10,13 +10,85 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
     <title>Intilligent Lights</title>
 </head>
-<body>
-    
-    <header class="jumbotron">
-        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+<body onload="myFunction()">
+    <div class="preload justify-content-center" id="preload">
+        <div class="logo">
+        </div>
+        <div class="loader-frame">
+            <div class="loader1" id="loader1">
+                            <div class="loader1" id="loader1">
+                                <div class="loader1" id="loader1">
+                                    <div class="loader1" id="loader1">
+                                        <div class="loader5" id="loader1">
+                                            <div class="loader1" id="loader1">
+                                                <div class="loader1" id="loader1">
+                                                    <div class="loader1" id="loader1">
+                                                        <div class="loader5" id="loader1">
+                                                            <div class="loader1" id="loader1">
+                                                                <div class="loader1" id="loader1">
+                                                                    <div class="loader1" id="loader1">
+                                                                        <div class="loader5" id="loader1">
+                                                                            <div class="loader5" id="loader1">
+                                                                                <div class="loader5" id="loader1">
+                                                                                    <div class="loader5" id="loader1">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            <div class="circle">
+                <div class="circle2">
+                    <div class="circle3"></div>
+                </div>
+            
+            </div>
+            
+        </div>
+    </div>
+    <div id="mydiv"></div>
+    <header class="bg" >
+        
         <div class="container">
             <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
                 <div class="container">
+                    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+                        <div class="container">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="Navbar">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#what">What</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#how">How</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#who">Who</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#whatelse">What Else</a></li>
+                                    <script>
+                                        $(".nav-item").on("click", function(e){
+                                        // Remove class active form all li.nav-tiem
+                                        $("li.nav-item").removeClass("active");
+                                        // Add Class to current Element. 
+                                        $(this).addClass("active");
+                                        });
+                                    </script>
+                                </ul>
+                            </div>       
+                        </div>
+                    </nav>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -39,29 +111,6 @@
                     </div>       
                 </div>
             </nav>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="Navbar">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#what">What</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#how">How</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#who">Who</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#whatelse">What Else</a></li>
-                    <script>
-                        $(".nav-item").on("click", function(e){
-                        // Remove class active form all li.nav-tiem
-                        $("li.nav-item").removeClass("active");
-                        // Add Class to current Element. 
-                        $(this).addClass("active");
-                        });
-                    </script>
-                </ul>
-            </div>       
-        </div>
-    </nav>
-        <div class="container">
             <video autoplay muted loop id="myVideo">
                 <source src="videos/main-nackground.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
@@ -70,7 +119,7 @@
             <div class="row row-header">
                 <div class="col-12 col-sm-12">
                     <h1>INTELLIGENT LIGHTS</h1>
-                    <p>An Effective Solution to uneven traffic using Artificial Intilligence.</p>
+                    <p>An Effective Automated Traffic Management System.</p>
                 </div>
                 
                 <div class="col-12 col-sm">
@@ -94,47 +143,67 @@
         </div>
     
     </header>
+    <div id="what">
 
-    <section class="ok">
-        <p></p>
-        </section>
-
-    <div class="container" data-aos="fade-up" data-aos-anchor-placement="top-center" id="what">
+    </div>
+    <div class="container" data-aos="fade-up" data-aos-anchor-placement="top-center">
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-12 col-md-12">
-                <h3>WHAT ?</h3>
-            </div>
             <span><span><div><div>                     </div></div></span></span>
+            <div class="col-12 col-sm-12 col-md-12">
+            <h3 class="what-pad">WHAT ?</h3> 
+            </div>
+
+            
             <div class="col-11 col-sm-10 col-md-10">
                 <h2></h2>
-                <p class="text-justify">Traffic congestion is one of the most vexing urban issues. Population growth together with a great demand of 
-                    transportation indirectly contribute to the increasing number of vehicles on the road that will eventually 
-                    cause traffic congestion. Many traditional and recent approaches tried to decrease traffic congestion by 
-                    rerouting vehicles, increasing width of roads, developing new architectures etc, but we are trying to 
-                    touch on different side of approach which focuses on time wasted in Today's traffic. </p>
+                <p class="text-justify">Do you ever felt happy seeing green light when stuck in huge traffic? 
+                    Yes, in today’s life watching red light turning into green feels contented. Why not this 
+                    happiness last for a quite while? The same thought led us in modelling a new traffic architecture. 
+                    Traffic has become an inescapable problem in many major cities. The time people waiting infront of
+                    red light is increasing day by day. Why is it getting worse? The current traffic 
+                    architecture works on pre-defined static time allocation. This approach works good for even 
+                    traffic but fails with uneven traffic. There are many approaches that speaks about controlling 
+                    congestion of traffic but very few focused on harnessing time wasted in current architecture. 
+                    We examined many of the existing methods and deliberate a new traffic management system which 
+                    is smart, automated and effective. </p>
             </div>
         </div>
     </div>
+    <div id="how">
 
-    <div class="container" data-aos="fade-up" data-aos-anchor-placement="top-center" id="how">
+    </div>
+    <div class="container" data-aos="fade-up" data-aos-anchor-placement="top-center">
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-12 col-md-12">
                 <h3>HOW ?</h3>
             </div>
             <div class="col-11 col-sm-10 col-md-10">
                 <h2></h2>
-                <p class="text-justify">The execution of algorithm begins with detecting vehicles on the road for which green light will be alloted in near future.
-                     Each category is alloted with specific set of points. Based on the total points a road gets, the green light for vehicle clearance will be 
-                     calculated. Many methods were successful till here but we are further optimising it. The vehicles densities are compared with other roads 
-                     thereby varying the alloted green light time. This increases real-time effectiveness and helps in minimising uneven traffic. The final 
-                     method focuses on protecting mean time. Every vehicle in the first row of the signal is promised to cross the signal within mean time 
-                     no matter whatever optimisation is carried out. The results obtained were much better compared to current architectures. Excited to learn more?
-                      Feel free to access our published paper <a href="#">here</a> </p>
+                <p class="text-justify">How do we increase green light time? Time is eternal. 
+                    We can’t just add green light time to a certain road by making other traffic
+                     wait but we can utilize the time actually wasted in current traffic architecture. 
+                     This can be achieved by taking real instance of traffic into consideration. 
+                     Our flow of execution starts by using available surveillance cameras adjusted
+                      to desired heights to capture frames then processing them to get actual 
+                      severity of traffic. Many methods were successful till here calculating 
+                      the time required for clearance of detected traffic. But that’s not enough.
+                       So, we dived deep into further optimizations called variance-based optimization 
+                       which compares the traffic on all other sides of the signal with current road 
+                       then altering the time allotted previously. This method not only optimizes the 
+                       first result but also ensure that no time is wasted in the process. The algorithm
+                        is finally tuned for protecting mean-time of the vehicles by readjusting the 
+                        variance times if they exceed the maximum waiting time. By this every vehicle 
+                        in the first row of signal will be promised to pass the signal within mean time. 
+                        These 3 phases of optimization increases the real-time effectiveness and helps in 
+                        minimizing uneven traffic. Excited to learn more?
+                     Feel free to access our research paper <a href="https://irjet.net/archives/V7/i8/IRJET-V7I8572.pdf">here</a> </p>
             </div>
         </div>
     </div>
+    <div id="who">
 
-    <div class="container" data-aos="fade-up" data-aos-anchor-placement="top-center" id="who">
+    </div>
+    <div class="container" data-aos="fade-up" data-aos-anchor-placement="top-center">
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-12 col-md-12 ">
                 <h3>WHO?</h3>
@@ -160,9 +229,9 @@
                     <small>Student - CSE</small>
                     <p class="p2" >Ramaiah University of Applied Sciences</p>
                     <div class="btn-group justify-content-center"> 
-                        <a role="button" class="btn btn-secondary btn-lg" href="#"><i class="fa fa-instagram"></i></a>
-                        <a role="button" class="btn btn-secondary btn-lg" href="#"><i class="fa fa-envelope"></i></a>
-                        <a role="button" class="btn btn-secondary btn-lg" href="#"><i class="fa fa-linkedin"></i></a>
+                        <a role="button" class="btn btn-secondary btn-lg" href="https://www.instagram.com/_manoj_._kumar_/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a role="button" class="btn btn-secondary btn-lg" href="mailto:vsrmanoj.99@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                        <a role="button" class="btn btn-secondary btn-lg" href="https://www.linkedin.com/in/manoj-kumarv" target="_blank"><i class="fa fa-linkedin"></i></a>
                     </div>
                 </div>
 
@@ -172,9 +241,9 @@
                     <small >Student - CSE</small>
                     <p class="p2" >Ramaiah University of Applied Sciences</p>
                     <div class="btn-group justify-content-center"> 
-                        <a role="button" class="btn btn-secondary btn-lg" href="https://www.instagram.com/thanushree_m/?hl=en"><i class="fa fa-instagram"></i></a>
-                        <a role="button" class="btn btn-secondary btn-lg" href="#"><i class="fa fa-envelope"></i></a>
-                        <a role="button" class="btn btn-secondary btn-lg" href="https://www.linkedin.com/in/thanushree-m-4356a3134/"><i class="fa fa-linkedin"></i></a>
+                        <a role="button" class="btn btn-secondary btn-lg" href="https://www.instagram.com/thanushree_m/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a role="button" class="btn btn-secondary btn-lg" href="mailto:thanum99@gmail.com"><i class="fa fa-envelope" target="_blank"></i></a>
+                        <a role="button" class="btn btn-secondary btn-lg" href="https://www.linkedin.com/in/thanushree-m-4356a3134/" target="_blank"><i class="fa fa-linkedin"></i></a>
                     </div>
 
                 </div>
@@ -185,9 +254,9 @@
                     <small >Student - CSE</small>
                     <p class="p2">Ramaiah University of Applied Sciences</p>
                     <div class="btn-group justify-content-center"> 
-                        <a role="button" class="btn btn-secondary btn-lg" href="https://www.instagram.com/_.jeevith._/?hl=en"><i class="fa fa-instagram"></i></a>
-                        <a role="button" class="btn btn-secondary btn-lg" href="#"><i class="fa fa-envelope"></i></a>
-                        <a role="button" class="btn btn-secondary btn-lg" href="http://www.linkedin.com/in/jeevith15"><i class="fa fa-linkedin"></i></a>
+                        <a role="button" class="btn btn-secondary btn-lg" href="https://www.instagram.com/_.jeevith._/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a role="button" class="btn btn-secondary btn-lg" href="mailto:jeevith15@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                        <a role="button" class="btn btn-secondary btn-lg" href="http://www.linkedin.com/in/jeevith15" target="_blank"><i class="fa fa-linkedin"></i></a>
                     </div>
                 </div>
                 <div class="img-box col-lg-4"  data-aos="fade-up" data-aos-anchor-placement="top-center">
@@ -196,9 +265,9 @@
                     <small >Student - CSE</small>
                     <p class="p2">Ramaiah University of Applied Sciences</p>
                     <div class="btn-group justify-content-center"> 
-                        <a role="button" class="btn btn-secondary btn-lg" href="https://www.instagram.com/pradeep_r_shankar/?hl=en"><i class="fa fa-instagram"></i></a>
-                        <a role="button" class="btn btn-secondary btn-lg" href="#"><i class="fa fa-envelope"></i></a>
-                        <a role="button" class="btn btn-secondary btn-lg" href="https://www.linkedin.com/in/pradeep-r-shankar-5626121b5"><i class="fa fa-linkedin"></i></a>
+                        <a role="button" class="btn btn-secondary btn-lg" href="https://www.instagram.com/pradeep_r_shankar/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a role="button" class="btn btn-secondary btn-lg" href="mailto:pradeepshankar99@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                        <a role="button" class="btn btn-secondary btn-lg" href="https://www.linkedin.com/in/pradeep-r-shankar-5626121b5" target="_blank"><i class="fa fa-linkedin"></i></a>
                     </div>
                 </div>
                 <div class="img-box col-lg-4"  data-aos="fade-up" data-aos-anchor-placement="top-center">
@@ -207,9 +276,9 @@
                     <small >Student - CSE</small>
                     <p class="p2">Ramaiah University of Applied Sciences</p>
                     <div class="btn-group justify-content-center"> 
-                        <a role="button" class="btn btn-secondary btn-lg" href="#"><i class="fa fa-instagram"></i></a>
-                        <a role="button" class="btn btn-secondary btn-lg" href="#"><i class="fa fa-envelope"></i></a>
-                        <a role="button" class="btn btn-secondary btn-lg" href="https://www.linkedin.com/in/rahul-v-8929701b5"><i class="fa fa-linkedin"></i></a>
+                        <a role="button" class="btn btn-secondary btn-lg" href="https://www.instagram.com/rahul_v5/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a role="button" class="btn btn-secondary btn-lg" href="mailto:rahulvenkatesh99@yahoo.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                        <a role="button" class="btn btn-secondary btn-lg" href="https://www.linkedin.com/in/rahul-v-8929701b5" target="_blank"><i class="fa fa-linkedin"></i></a>
                     </div>
                 </div>
                 <div class="img-box col-lg-4"  data-aos="fade-up" data-aos-anchor-placement="top-center">
@@ -218,9 +287,9 @@
                     <small >Student - CSE</small>
                     <p class="p2" >Ramaiah University of Applied Sciences</p>
                     <div class="btn-group justify-content-center"> 
-                        <a role="button" class="btn btn-secondary btn-lg" href="https://www.instagram.com/fervide._.lover/?hl=en"><i class="fa fa-instagram"></i></a>
-                        <a role="button" class="btn btn-secondary btn-lg" href="#"><i class="fa fa-envelope"></i></a>
-                        <a role="button" class="btn btn-secondary btn-lg" href="https://www.linkedin.com/in/yatish-rasineni-98074a19a"><i class="fa fa-linkedin"></i></a>
+                        <a role="button" class="btn btn-secondary btn-lg" href="https://www.instagram.com/fervide._.lover/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a role="button" class="btn btn-secondary btn-lg" href="mailto:yatishrasineni@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                        <a role="button" class="btn btn-secondary btn-lg" href="https://www.linkedin.com/in/yatish-rasineni-98074a19a" target="_blank"><i class="fa fa-linkedin"></i></a>
                     </div>
                 </div>
                 <div class="img-box col-lg-4 " data-aos="fade-up" data-aos-anchor-placement="top-center">
@@ -229,9 +298,9 @@
                     <small >Assistant Professor - CSE</small>
                     <p class="p2">Ramaiah University of Applied Sciences</p>
                     <div class="btn-group justify-content-center"> 
-                        <a role="button" class="btn btn-secondary btn-lg" href="https://www.instagram.com/hari_krishna_sm/?hl=en"><i class="fa fa-instagram"></i></a>
-                        <a role="button" class="btn btn-secondary btn-lg" href="#0"><i class="fa fa-envelope"></i></a>
-                        <a role="button" class="btn btn-secondary btn-lg" href="#0"><i class="fa fa-linkedin"></i></a>
+                        <a role="button" class="btn btn-secondary btn-lg" href="https://www.instagram.com/hari_krishna_sm/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a role="button" class="btn btn-secondary btn-lg" href="mailto:harikrishna.cs.et@msruas.ac.in" target="_blank"><i class="fa fa-envelope"></i></a>
+                        <a role="button" class="btn btn-secondary btn-lg" href="https://www.linkedin.com/in/hari-krishna-26656291/" target="_blank"><i class="fa fa-linkedin"></i></a>
                     </div>  
                 </div>
             </div>
@@ -239,19 +308,32 @@
     </section>
     
     </div>
-    <div class="container" data-aos="fade-up" data-aos-anchor-placement="top-center" id="whatelse">
+    <div id="whatelse">
+
+    </div>
+    <div class="container" data-aos="fade-up" data-aos-anchor-placement="top-center">
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-12 col-md-12">
                 <h3>WHAT ELSE?</h3>
             </div>
             <div class="col-11 col-sm-10 col-md-10">
                 <h2></h2>
-                <p>We Speak Facts. Not Fantasies</p>
+                <div class="font-italic text-center">We Speak Facts. Not Fantasies</div>
+                <p></p>
+                <p class="text-justify"> Yes, we speak only facts. We established ourselves to project away from traditional 
+                    approaches by modeling a new type of traffic architecture. Although the results obtained were much better 
+                    compared to current architectures, still our way of execution should be enhanced further. Shortage of 
+                    desired datasets and execution speeds limited us to output a working content rather than making it perfect. 
+                    With enough datasets and acceptable time constraints, our algorithm can be further modified to join real-time success. 
+                    Our work makes sense when we are successful in saving a minute of wasted time because every second counts.
+                </p>
+                    
+                <p class="text-justify">Be a part of our endeavor by expressing your thoughts on our attempt. Every comment will really be appreciated.
+                </p>
             </div>
         </div>
         <p></p>
-        <div id="root"></div>
-
+        <div class="root" id="root"></div>
     </div>
     <footer class="footer">
         <div class="container">
